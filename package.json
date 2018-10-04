@@ -1,0 +1,8 @@
+{
+    "name": "my-profile",
+    "version": "0.0.1",
+    "description": "My profile page",
+    "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
+    "license": "MIT",
+    "repository": "https://github.com/maurovieirareis/my-profile"
+}
