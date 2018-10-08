@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GEM | Man & Women Fashion Shop</title>
     <link rel="stylesheet" href="src/styles/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Source+Sans+Pro:300,400,700" rel="stylesheet">
 </head>
 <body class="app">
+    <!-- Header Section -->
     <header class="header">
         <section class="container--small header__content">
-            <div class="logo">
+            <!-- Logo -->
+            <div class="header__logo">
                 <img src="src/static/images/Logo.png">
             </div>
+            <!-- End Logo  -->
+            <!-- Navigation -->
             <nav class="nav">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">HomePages</a>
+                        <a class="menu__link menu-is-active" href="index.html">Home Page</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="work.html">Pages</a>
@@ -38,14 +42,20 @@
                     </li>
                 </ul>
             </nav>
+            <!-- End Navigation -->
         </section>
+        <!-- End Header Section -->
     </header>
+    <!-- End Header Section -->
+
+    <!-- Main Section-->
     <main class="main">
+        <!-- New Collection -->
         <section class="container new-collection">
             <div class="new-collection__content">
                 <div class="new-collection__info">
                     <h3>New <span>Collection</span></h3>
-                    <p>⏤ Good for women</p>
+                    <p class="new-collection__hashtag">#goodForWomen</p>
                     <button class="button">Shop New Arrivals</button>
                 </div>
                 <div class="new-collection__image">
@@ -57,12 +67,14 @@
                     <img src="https://via.placeholder.com/1500x1200" alt="" />
                 </div>
                 <div class="new-collection__info">
-                    <h3>New <span>Collection</span></h3>
-                    <p>Good for man</p>
-                    <button class="button">Shop Now</button>
+                    <h3>Men's Sumer <span>Collection</span></h3>
+                    <p class="new-collection__hashtag">#goodForMan</p>
+                    <button class="button">Shop New Arrivals</button>
                 </div>
             </div>
         </section>
+        <!-- End New Collection -->
+        <!-- Sales -->
         <section class="sales">
             <div class="sales__content">
                 <div class="container">
@@ -76,6 +88,8 @@
                 Shock Offer
             </div>
         </section>
+        <!-- End Sales -->
+        <!-- Trends -->
         <section class="container trends">
             <div class="trends__content">
                 <div class="trends__info">
@@ -108,7 +122,14 @@
                 </div>
             </div>
         </section>
+        <!-- End Trends -->
     </main>
-    <footer></footer>
+    <!-- End Main Section -->
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
