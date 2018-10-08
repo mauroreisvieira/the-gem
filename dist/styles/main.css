@@ -1,0 +1,335 @@
+/**
+ * Font's:
+ *  - Source Sans Pro: 300, 400, 700;
+ *  - 'Calligraffitti', cursive: 400;
+ *
+ * Colors:
+ *  - #1a3a7a --> Primary
+ *  - #3a393a --> Secondary
+ */
+
+ html {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3a393a;
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: #fff;
+    font-size: 100%;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+/** Container ------------------------------------------------------------------------------------------------------- */
+.container {
+    max-width: 1360px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.container--small {
+    max-width: 1024px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+/** Header ---------------------------------------------------------------------------------------------------------- */
+.header {
+    background-color: #fff;
+    margin-bottom: 32px;
+    margin-top: 40px;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    max-width: 160px;
+}
+
+.header__logo img {
+    width: 100%;
+    align-content: right;
+    filter: invert(100%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__content {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        margin-bottom: 18px;
+    }
+}
+
+/** Main ------------------------------------------------------------------------------------------------------------ */
+.main {
+    width:  100%;
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+
+/** Nav ------------------------------------------------------------------------------------------------------------- */
+.nav {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 16px 0;
+}
+
+/** Menu ------------------------------------------------------------------------------------------------------------ */
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    margin-left: 8px;
+}
+
+.menu__link {
+    white-space: nowrap;
+    color: currentColor;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-is-active,
+.menu__link:hover {
+    color: #1a3a7a;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
+/** Button ---------------------------------------------------------------------------------------------------------- */
+.button {
+    display: flex;
+    background-color: transparent;
+    border: 2px solid #3a393a;
+    border-radius: 0;
+    font-weight: 700;
+    padding: 8px 24px 8px 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.button--light {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #f4dc9c;
+}
+
+.button:hover {
+    background-color: #3a393a;
+    border: 2px solid #3a393a;
+    color: #fff;
+}
+
+.button--light:hover {
+    background-color: #fff;
+}
+
+/** New Coolection -------------------------------------------------------------------------------------------------- */
+.new-collection {
+    padding-bottom: 0;
+}
+
+.new-collection__content {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.new-collection__content:last-child {
+    margin-bottom: 0;
+}
+
+.new-collection__image {
+    background-color: #fff;
+    flex-grow: 1
+}
+
+.new-collection__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.new-collection__info {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.new-collection__info:nth-child(even) {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.new-collection__info h3 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.new-collection__info h3 span {
+    font-weight: 300;
+}
+
+.new-collection__info p {
+    font-size: 24px;
+    color: #666;
+    font-family: 'Calligraffitti', cursive;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+.new-collection__info .new-collection__hashtag {
+    color: #1e90ff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .new-collection__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 0;r
+    }
+
+    .new-collection__content:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-collection__info,
+    .new-collection__content:nth-child(even) .new-collection__info {
+        padding: 24px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .new-collection__info p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+/** Sales ----------------------------------------------------------------------------------------------------------- */
+.sales {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(https://via.placeholder.com/1900x300);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sales__content {
+    position: relative;
+    z-index: 1;
+    top: -56px;
+}
+
+.sales__content p {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.sales__content h2 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sales__content span {
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 18px;
+}
+
+.sales__content hr {
+    width: 100px;
+    margin: 18px auto;
+    height: 2px;
+    border: 0;
+    background: #fff;
+}
+
+.sales__overlay {
+    align-items: center;
+    background-color: #000;
+    color: rgba(255,255,255,0.2);
+    display: flex;
+    font-size: 260px;
+    font-weight: 600;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/** Trends ---------------------------------------------------------------------------------------------------------- */
+.trends__content {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.trends__content:last-child {
+    margin-bottom: 0;
+}
