@@ -1,0 +1,39 @@
+.nav {
+  width: 100%;
+  padding: 16px 0;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+}
+
+.menu__item {
+  margin-left: 8px;
+}
+
+.menu__link {
+  padding: 4px 16px;
+  color: currentColor;
+  font-size: $fontSmall;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.menu-is-active,
+.menu__link:hover {
+  color: #1a3a7a;
+}
+
+@include media-query(small) {
+  .menu {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  background: #eee;
+  background: linear-gradient(to right, #fff 0%, #fff 50%, #d9d5d4 50%, #d9d5d4 100%);
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__contacts {
+    flex-basis: 50%;
+    padding: 64px 128px 64px 0;
+  }
+
+  &__contacts .heading-3 {
+    text-transform: uppercase;
+  }
+
+  &__contacts hr {
+    width: 80px;
+    margin: 18px auto 40px 0;
+    height: 2px;
+    border: 0;
+    background: #000;
+  }
+
+  &__contacts p {
+    padding: 24px 0;
+    text-align: justify;
+  }
+
+  &__contacts .telefone {
+    display: block;
+    padding: 24px 0;
+    font-size: 24px;
+    font-weight: 550;
+  }
+
+  &__contacts .telefone:link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__contacts .telefone:hover {
+    color: #444;
+    text-decoration: underline;
+  }
+
+  &__contacts .telefone:active {
+    text-decoration: none;
+  }
+
+  &__contacts .email:link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__contacts .email:hover {
+    color: #444;
+    text-decoration: underline;
+  }
+
+  &__contacts .email:active {
+    text-decoration: none;
+  }
+
+  &__opyright {
+    padding-top: 80px;
+  }
+
+  &__newsletter {
+    flex-basis: 50%;
+    padding: 64px 0 64px 80px;
+  }
+
+  &__newsletter .heading-3 {
+    text-transform: uppercase;
+  }
+
+  &__newsletter hr {
+    width: 80px;
+    height: 2px;
+    margin: 18px auto 40px 0;
+    border: 0;
+    background: #000;
+  }
+
+  &__newsletter__info {
+    padding: 24px 0 96px 0;
+    text-align: justify;
+  }
+}
+
+.footer_social__item {
+  display: inline;
+  height: 100%;
+  list-style-type: none;
+  margin-right: 16px;
+}
+
+.footer_social__link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.footer_social__link:hover {
+  color: #1a3a7a;
+}

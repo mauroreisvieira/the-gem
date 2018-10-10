@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    background-color: $colorWhite;
+    margin-bottom: 32px;
+    margin-top: 40px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        background: transparent;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.header__logo {
+    max-width: 160px;
+}
+
+.header__logo img {
+    width: 100%;
+    align-content: right;
+    filter: invert(100%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__content {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        margin-bottom: 18px;
+    }
+}

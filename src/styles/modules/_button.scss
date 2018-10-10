@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  background-color: transparent;
+  border: 2px solid #3a393a;
+  border-radius: 0;
+  font-weight: 700;
+  padding: 8px 24px 8px 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.button--light {
+  background-color: transparent;
+  border: 2px solid $colorWhite;
+  color: #f4dc9c;
+}
+
+.button:hover {
+  background-color: #3a393a;
+  border: 2px solid #3a393a;
+  color: $colorWhite;
+}
+
+.button--light:hover {
+  background-color: $colorWhite;
+}

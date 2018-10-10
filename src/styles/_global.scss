@@ -1,0 +1,52 @@
+* {
+  @include prefixr(box-sizing, border-box);
+}
+
+html,
+body {
+  font-size: $fontSizeDefault;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: $colorText;
+  font-family: $fontDefault;
+  font-weight: $fontLight;
+}
+
+pre {
+  background: $colorGrayBackground;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  height: calc(100% - #{$topBarHeight});
+}
+
+.main-container {
+  @include container(true);
+}
+
+.container {
+  @include container(true);
+}
+
+.container--medium {
+  @include medium {
+    @include container(true);
+  }
+}
+
+.container--small {
+  @include small-only {
+    @include container(true);
+  }
+}
