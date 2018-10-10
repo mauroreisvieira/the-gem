@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE GEM | Man & Women Fashion Shop</title>
-    <link rel="stylesheet" href="dist/styles/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles/bundle.css" />
+    <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body class="app">
     <!-- Header Section -->
     <header class="header">
-        <section class="container--small header__content">
+        <section class="container header__content">
             <!-- Logo -->
             <div class="header__logo">
-                <img src="dist/static/images/logo.png">
+                <img src="dist/static/images/logo.png" title="The Gem">
             </div>
             <!-- End Logo  -->
             <!-- Navigation -->
@@ -54,7 +54,7 @@
         <section class="container new-collection">
             <div class="new-collection__content">
                 <div class="new-collection__info">
-                    <h3>⏤ New <span>Collection</span></h3>
+                    <p class="heading-3">⏤ New <span>Collection</span></p>
                     <p class="new-collection__hashtag">#goodForWomen</p>
                     <button class="button">Shop New Arrivals</button>
                 </div>
@@ -67,7 +67,7 @@
                     <img src="https://via.placeholder.com/1500x1200" alt="" />
                 </div>
                 <div class="new-collection__info">
-                    <h3>⏤ Men's Summer <span>Collection</span></h3>
+                    <p class="heading-3">⏤ Men's Summer <span>Collection</span></p>
                     <p class="new-collection__hashtag">#goodForMan</p>
                     <button class="button">Shop New Arrivals</button>
                 </div>
@@ -89,49 +89,37 @@
             </div>
         </section>
         <!-- End Sales -->
-        <!-- Trends -->
-        <!--
-        <section class="container trends">
-            <div class="trends__content">
-                <div class="trends__info">
-                    <h3>New <span>Collection</span></h3>
-                    <p>⏤ Good for women</p>
-                    <button class="button">Shop New Arrivals</button>
-                </div>
-                <div class="trends__image">
-                    <img src="https://via.placeholder.com/1500x900" alt="" />
-                </div>
-            </div>
-            <div class="trends__content">
-                <div class="trends__image">
-                    <img src="https://via.placeholder.com/1500x1200" alt="" />
-                </div>
-                <div class="trends__info">
-                    <h3>New <span>Collection</span></h3>
-                    <p>Good for man</p>
-                    <button class="button">Shop Now</button>
-                </div>
-            </div>
-            <div class="trends__content">
-                <div class="trends__image">
-                    <img src="https://via.placeholder.com/1500x1200" alt="" />
-                </div>
-                <div class="trends__info">
-                    <h3>New <span>Collection</span></h3>
-                    <p>Good for man</p>
-                    <button class="button">Shop Now</button>
-                </div>
-            </div>
-        </section>
-        -->
-        <!-- End Trends -->
+
     </main>
     <!-- End Main Section -->
 
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+        <section class="container footer__content">
+            <div class="footer__contacts">
+                <p class="heading-3">Contact us</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illo exercitationem natus aut similique consectetur! Suscipit iure, modi non velit.</p>
+                <a href="tel:+1272272282" class="telefone">+1 272 272 282</a>
+                <a href="mailto:info@thegem.com" class="email">info@thegem.com</a>
+                <div class="footer__copyright">
+                    <p>ⓒ Copyright TheGem</p>
+                </div>
+            </div>
+            <div class="footer__newsletter">
+                <p class="heading-3">Newsletter</p>
+                <hr>
+                <p class="footer__newsletter__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illo exercitationem natus aut similique consectetur! Suscipit iure, modi non velit.</p>
+                <ul class="footer_social">
+                    <li class="footer_social__item"><a href="" class="footer_social__link"><i class="icon ion-logo-facebook"></i></a></li>
+                    <li class="footer_social__item"><a href="" class="footer_social__link"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li class="footer_social__item"><a href="" class="footer_social__link"><i class="icon ion-logo-linkedin"></i></a></li>
+                    <li class="footer_social__item"><a href="" class="footer_social__link"><i class="icon ion-logo-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
-    <!-- Footer -->
+    <!-- End Footer -->
+    <script src="dist/scripts/bundle.js"></script>
 </body>
 </html>
